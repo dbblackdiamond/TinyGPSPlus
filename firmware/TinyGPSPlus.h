@@ -30,6 +30,8 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 //#include "WProgram.h"
 //#endif
 #include <limits.h>
+#include "stdint.h"
+#include "application.h"
 
 #define _GPS_VERSION "0.92" // software version of this library
 #define _GPS_MPH_PER_KNOT 1.15077945
