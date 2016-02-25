@@ -1,5 +1,5 @@
-#include <TinyGPS++.h>
-#include <SoftwareSerial.h>
+#include <TinyGPSPlus/TinyGPSPlus.h>
+//#include <SoftwareSerial.h>
 /*
    This sample code demonstrates just about every built-in operation of TinyGPS++ (TinyGPSPlus).
    It requires the use of SoftwareSerial, and assumes that you have a
