@@ -31,6 +31,10 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define _GPRMCterm   "GPRMC"
 #define _GPGGAterm   "GPGGA"
 
+#define radians(x) ((x * 71) / 4068)
+#define degrees(x) ((x * 4068) / 71)
+#define sq(x) (x * x)
+
 TinyGPSPlus::TinyGPSPlus()
   :  parity(0)
   ,  isChecksumTerm(false)
@@ -299,7 +303,7 @@ double TinyGPSPlus::distanceBetween(double lat1, double long1, double lat2, doub
   double clat2 = cos(lat2);
   delta = (clat1 * slat2) - (slat1 * clat2 * cdlong);
   delta = sq(delta);
-  delta += sq(clat2 * sdlong);
+  delta += sq((clat2 * sdlong));
   delta = sqrt(delta);
   double denom = (slat1 * slat2) + (clat1 * clat2 * cdlong);
   delta = atan2(delta, denom);
