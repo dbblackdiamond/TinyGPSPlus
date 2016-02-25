@@ -26,6 +26,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <math.h>
 
 #define _GPRMCterm   "GPRMC"
 #define _GPGGAterm   "GPGGA"
