@@ -1,0 +1,7 @@
+{
+    "name" : "TinyGPSPlus",
+    "version" : "0.94b",
+    "author" : "Bertrand Sirodot", 
+    "description" : "A port to the Particle Photon of the Arduino TinyGPS++ Library.",
+    "license" : "LGPL"
+}
